@@ -1,0 +1,9 @@
+transformers
+ipykernel
+jupyter
+tensorflow
+torch
+mysql-connector-python 
+pandas
+nltk
+matplotlib
