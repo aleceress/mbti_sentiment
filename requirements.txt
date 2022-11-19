@@ -7,3 +7,4 @@ mysql-connector-python
 pandas
 nltk
 matplotlib
+wordcloud
