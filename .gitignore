@@ -560,3 +560,11 @@ FodyWeavers.xsd
 
 # Project configuration
 config.py
+
+# Data files
+data/
+
+# Other ignored project files
+ideas.md
+paper/
+results/

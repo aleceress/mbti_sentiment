@@ -8,3 +8,7 @@ pandas
 nltk
 matplotlib
 wordcloud
+praw
+psaw
+scipy
+scikit-learn
