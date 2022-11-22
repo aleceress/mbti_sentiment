@@ -118,14 +118,9 @@ def visualizing_results(pca_result, label, centroids_pca):
     for i, txt in enumerate(TYPES):
         ax.annotate(txt, (x[i], y[i]))
 
-    # plt.scatter(x, y, c=label, alpha=0.5, s=200)  # plot different colors per cluster
-
     plt.title('Personality clusters')
     plt.xlabel('PCA 1')
     plt.ylabel('PCA 2')
-
-    # plt.scatter(centroids_pca[:, 0], centroids_pca[:, 1], s=200, linewidths=1.5,
-    #            color='red', edgecolors="black", lw=1.5)
 
     plt.show()
 

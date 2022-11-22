@@ -133,8 +133,9 @@ def get_correlation(trait, non_trait, emotion):
     return corr, pvalue
 
 
-def get_wordcloud(posts):
-    text = " ".join([word.lower() for word in " ".join(posts["post_body"]).split(
+def get_wordcloud(type):
+    type_posts = get_posts(type)
+    text = " ".join([word.lower() for word in " ".join(type_posts["post_body"]).split(
     ) if word.lower() not in stopwords.words("english")])
     wordcloud = WordCloud(width=1600, height=800).generate(text)
     return wordcloud
