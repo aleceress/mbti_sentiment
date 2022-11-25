@@ -146,9 +146,18 @@ def get_types_avg_emotion(types):
                      "sadness": 0, "surprise": 0, "fear": 0})
 
     for personality in types:
-        personality_posts = get_posts(personality)
-        personality_avg = get_emotions_avg(get_posts_emotions(
-            personality_posts), len(personality_posts))
+        personality_avg = get_emotions_avg(personality)         
         types_sum = dict(Counter(types_sum) + Counter(personality_avg))
 
     return {k: types_sum[k]/len(types) for k in types_sum}
+
+def get_types_sentiment_max(types):
+    types_sum = dict({"POSITIVE": 0, "NEGATIVE": 0})
+    total_cardinality = 0
+
+    for personality in types:
+        sentiment, cardinality = get_sentiment_max(personality)
+        total_cardinality += cardinality
+        types_sum = dict(Counter(types_sum) + Counter(sentiment))
+
+    return {k: types_sum[k]/total_cardinality for k in types_sum}
