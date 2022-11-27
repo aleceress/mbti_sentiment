@@ -5,7 +5,7 @@ from tqdm import tqdm
 import pickle
 from config import *
 from nltk.corpus import stopwords
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+from wordcloud import WordCloud
 import os.path
 import numpy as np
 from collections import Counter

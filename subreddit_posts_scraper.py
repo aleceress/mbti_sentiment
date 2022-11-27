@@ -52,7 +52,7 @@ if not is_table_present("posts"):
 # adds posts from the specified subreddit
 subreddit_name = input("name of the subreddit you want to scrape: ")
 print("scraping posts...")
-add_subreddit_posts(SUBREDDIT_NAME)
+add_subreddit_posts(subreddit_name)
 
 sql = "SELECT id from posts"
 cursor.execute(sql)

@@ -42,6 +42,7 @@ The notebooks [type_analysis.ipynb](https://github.com/aleceress/mbti_sentiment/
 
 ## __Running__ 
 
+
 To run all the code in the respository, you can create a virtual environment and run the following commands.
 
 ```
@@ -49,3 +50,6 @@ virtualenv venv
 source ./venv/bin/activate
 pip install -r requirements.txt
 ```
+
+To execute [subreddit_post_scraper.py](https://github.com/aleceress/mbti_sentiment/blob/master/subreddit_posts_scraper.py), you first need an instance of a MySQL database to connect to.
+You also need some parameters associated to your reddit account and to the MySQL database: all needs to be inserted in a `config.py` file, following the schema of [`config.example.py`](https://github.com/aleceress/mbti_sentiment/blob/master/config.example.py).
